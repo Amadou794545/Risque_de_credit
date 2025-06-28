@@ -6,7 +6,12 @@ import plotly.express as px
 
 #titre
 st.title("Risque de Crédit")
-st.write("Ce projet utilise un modèle de machine learning pour prédire le risque de crédit d'un client et aide à savoir si un client doit être accepté ou non.")
+st.write("Ce projet utilise un modèle de machine learning pour prédire le risque de crédit d'un client.")
+# Explication
+st.write("Le modèle prédit si un client est susceptible de faire défaut sur un prêt en fonction de ses caractéristiques personnelles et financières.")
+st.write("Il est conçu pour évaluer le risque de crédit en se basant sur des données anonymisées et agrégées, garantissant ainsi la confidentialité des informations personnelles.")
+st.write("L'objectif est de fournir une évaluation objective du risque de crédit, permettant aux institutions financières de prendre des décisions éclairées sur l'octroi de prêts.")
+
 
 #st.sidebar
 st.sidebar.title("Paramètres du Client")
