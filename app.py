@@ -24,7 +24,7 @@ loan_intent = st.sidebar.selectbox("Intention du Prêt", ["PERSONAL(Personnel)",
 loan_grade = st.sidebar.selectbox("Note de Crédit ( si vous savez pas quoi mettre vous pouvez mettre D)", ["A", "B", "C", "D", "E", "F", "G"] )
 loan_amnt = st.sidebar.number_input("Montant du Prêt", 1000, 5000000, 15000)
 loan_int_rate = st.sidebar.number_input("Taux d'Intérêt du Prêt (%)", 0.0, 30.0, 5.0)
-loan_percent_income = st.sidebar.number_input("Le remboursement du prêt represente combien de pourcentage sur votre salaire? (%)", 1, 100, 2)
+loan_percent_income = st.sidebar.number_input("Le remboursement du prêt represente combien de pourcentage sur votre salaire? (%)", 1, 100, 15)
 cb_person_default_on_file = st.sidebar.selectbox("Avez-vous deja été à defaut de paiement d'un crédit bancaire dans le passé?", ["YES(OUI)", "NO(NON)"])
 cb_person_cred_hist_length = st.sidebar.number_input("Si oui, combien de temps ? (en mois)", 0, 120, 0)
 
