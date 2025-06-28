@@ -63,6 +63,6 @@ if st.sidebar.button("Prédire"):
     st.write(f"Probabilité de défaut de paiement : {y_probs[0][0]}%")
 
     # Graphique
-    fig = px.bar(x=["le client fera defaut", "le client ne fera pas defaut "], y=[y_probs[0], 100 - y_probs[0]],
+    fig = px.bar(x=["le client fera defaut de paiement", "le client ne fera pas defaut paiement"], y=[y_probs[0], 100 - y_probs[0]],
                  labels={'x': 'Statut', 'y': 'Probabilité (%)'}, title='Probabilité de Risque de Crédit')
     st.plotly_chart(fig)
