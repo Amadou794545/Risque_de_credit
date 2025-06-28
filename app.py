@@ -45,6 +45,8 @@ data = {
 
 input_df = pd.DataFrame(data)
 
+st.dataframe(input_df, hide_index=True)
+
 # Chargement du modèle
 pipeline = jl.load("pipeline_credit.pkl")
 # Prédiction
