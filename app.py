@@ -59,7 +59,7 @@ if st.sidebar.button("Prédire"):
 
     # Affichage des résultats
     st.subheader("Résultats de la Prédiction")
-    st.write(f"Le risque de crédit du client est : {'Accepté' if y_pred[0][0] == 0 else 'Refusé car notre structure n accepte que de prendre des risque inférieur a 20%'}")
+    st.write(f"Le risque de faire un crédit à ce client est : {'Accepté' if y_pred[0][0] == 0 else 'Refusé car notre structure n accepte que de prendre des risque inférieur a 20%'}")
     st.write(f"Probabilité de défaut de paiement : {y_probs[0][0]}%")
 
     # Graphique
